@@ -53,7 +53,7 @@ int main() {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Enter category: ";
             getline(cin, category);
-            cout << "Enter description (e.g. card name or notes): ";
+            cout << "Enter description: ";
             getline(cin, description);
 
             fm.addTransaction(make_unique<Transaction>(
